@@ -26,7 +26,25 @@ modules:
         url: https://www.x.org/releases/individual/lib/libXres-1.2.3.tar.xz
         sha256: d2de8f5401d6c86a8992791654547eb8def585dfdc0c08cc16e24ef6aeeb69dc
 
-  # Xpra itself - install with pip for dependencies
+  # pycairo - Python Cairo bindings (built from source for headers)
+  - name: pycairo
+    buildsystem: meson
+    sources:
+      - type: archive
+        url: https://github.com/pygobject/pycairo/releases/download/v1.29.0/pycairo-1.29.0.tar.gz
+        sha256: f3f7fde97325cae80224c09f12564ef58d0d0f655da0e3b040f5807bd5bd3142
+
+  # PyGObject - Python GObject bindings (built from source for headers)
+  - name: pygobject
+    buildsystem: meson
+    config-opts:
+      - -Dpython=python3
+    sources:
+      - type: archive
+        url: https://download.gnome.org/sources/pygobject/3.56/pygobject-3.56.0.tar.gz
+        sha256: 4fbb5bf47524e01026f8e309dd54233eb0f75f2281392c5bf0df5d9041cc7891
+
+  # Xpra itself
   - name: xpra
     buildsystem: simple
     build-options:
@@ -34,46 +52,11 @@ modules:
         - --share=network
       env:
         PIP_PREFIX: /app
-        PKG_CONFIG_PATH: /app/lib/pkgconfig:/app/lib/x86_64-linux-gnu/pkgconfig:/app/share/pkgconfig
-        C_INCLUDE_PATH: /usr/include/pygobject-3.0:/usr/include/python3.13:/usr/include/cairo:/usr/include/pycairo:/app/include
-        CFLAGS: -I/usr/include/pygobject-3.0 -I/usr/include/python3.13 -I/usr/include/cairo -I/usr/include/pycairo
+        CFLAGS: -I/app/include/pygobject-3.0 -I/app/include/pycairo
+        CXXFLAGS: -I/app/include/pygobject-3.0 -I/app/include/pycairo
     build-commands:
-      # Install Python dependencies with pip (prefers wheels)
-      - pip3 install --prefix=/app pycairo PyGObject paramiko cryptography pyopenssl lz4 pillow pyopengl pyopengl-accelerate netifaces zeroconf
-      # Create directory for pkg-config files
-      - mkdir -p /app/lib/pkgconfig
-      # Generate pkg-config file for pycairo (pip doesn't install it)
-      - |
-        cat > /app/lib/pkgconfig/py3cairo.pc << EOF
-        prefix=/app
-        exec_prefix=\${prefix}
-        includedir=\${prefix}/include
-        datarootdir=\${prefix}/share
-        datadir=\${datarootdir}
-        
-        Name: py3cairo
-        Description: Python 3 bindings for cairo
-        Version: 1.29.0
-        Requires: cairo
-        Cflags: -I\${includedir}/pycairo
-        Libs: 
-        EOF
-      # Generate pkg-config file for pygobject (pip doesn't install it)
-      - |
-        cat > /app/lib/pkgconfig/pygobject-3.0.pc << EOF
-        prefix=/app
-        exec_prefix=\${prefix}
-        includedir=\${prefix}/include
-        datarootdir=\${prefix}/share
-        datadir=\${datarootdir}
-        
-        Name: pygobject-3.0
-        Description: Python 3 bindings for GObject
-        Version: 3.56.0
-        Requires: gobject-2.0 glib-2.0
-        Cflags: -I\${includedir}/pygobject-3.0
-        Libs: -L\${exec_prefix}/lib -lpygobject-3.0
-        EOF
+      # Install remaining Python dependencies with pip
+      - pip3 install --prefix=/app paramiko cryptography pyopenssl lz4 pillow pyopengl pyopengl-accelerate netifaces zeroconf
       # Install xpra itself
       - python3 setup.py install --prefix=/app --single-version-externally-managed --record=installed-files.txt
       # Install desktop integration files
@@ -81,7 +64,10 @@ modules:
       - install -Dm755 fs/bin/xpra_launcher /app/bin/xpra_launcher
       - install -Dm644 org.xpra.Client.desktop /app/share/applications/org.xpra.Client.desktop
       - install -Dm644 org.xpra.Client.metainfo.xml /app/share/metainfo/org.xpra.Client.metainfo.xml
+      # Install icons in multiple sizes (48, 128, 192)
       - install -Dm644 fs/share/xpra/icons/xpra.png /app/share/icons/hicolor/48x48/apps/org.xpra.Client.png
+      - install -Dm644 fs/share/icons/xpra.png /app/share/icons/hicolor/128x128/apps/org.xpra.Client.png
+      - install -Dm644 fs/share/icons/xpra.png /app/share/icons/hicolor/192x192/apps/org.xpra.Client.png
     sources:
       - type: archive
         url: https://api.github.com/repos/Xpra-org/xpra/tarball/v6.4.3
