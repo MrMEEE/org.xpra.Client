@@ -18,17 +18,32 @@ finish-args:
   - --talk-name=org.a11y.Bus
   - --own-name=org.xpra.Client
 
+build-options:
+  env:
+    - PIP_PREFIX=/app
+
 modules:
-  # Xpra itself
+  # libXres - X11 Resource extension library
+  - name: libXres
+    sources:
+      - type: archive
+        url: https://www.x.org/releases/individual/lib/libXres-1.2.3.tar.xz
+        sha256: d2de8f5401d6c86a8992791654547eb8def585dfdc0c08cc16e24ef6aeeb69dc
+
+  # Install Xpra with pip (which will handle dependencies)
   - name: xpra
     buildsystem: simple
+    build-options:
+      build-args:
+        - --share=network
     build-commands:
-      - pip3 install --prefix=/app --no-deps .
+      - pip3 install --prefix=/app --no-build-isolation Cython setuptools wheel meson-python patchelf
+      - pip3 install --prefix=/app --no-build-isolation pycairo PyGObject
+      - pip3 install --prefix=/app --no-build-isolation .
       - install -Dm755 */fs/bin/xpra /app/bin/xpra
-      - install -Dm755 */fs/bin/xpra_launcher /app/bin/xpra_launcher
+      - install -Dm755 */fs/bin/xpra_launcher /app/bin/xpra_launcher  
       - install -Dm644 org.xpra.Client.desktop /app/share/applications/org.xpra.Client.desktop
       - install -Dm644 org.xpra.Client.metainfo.xml /app/share/metainfo/org.xpra.Client.metainfo.xml
-      # Install icon
       - install -Dm644 */fs/share/xpra/icons/xpra.png /app/share/icons/hicolor/48x48/apps/org.xpra.Client.png
     sources:
       - type: archive

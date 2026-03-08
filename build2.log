@@ -1,0 +1,408 @@
+Emptying app dir 'builddir'
+Downloading sources
+Downloading https://www.x.org/releases/individual/lib/libXres-1.2.3.tar.xz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  262k  100  262k    0     0   248k      0  0:00:01  0:00:01 --:--:--  248k
+Starting build of org.xpra.Client
+Cache miss, checking out last cache hit
+========================================================================
+Building module libXres in /tmp/xpra-client-flatpak/org.xpra.Client/.flatpak-builder/build/libXres-1
+========================================================================
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '536800003' is supported by ustar format... no
+checking whether GID '536800003' is supported by ustar format... no
+checking how to create a ustar tar archive... none
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/x86_64-unknown-linux-gnu/bin/ld
+checking if the linker (/usr/x86_64-unknown-linux-gnu/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/x86_64-unknown-linux-gnu/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/x86_64-unknown-linux-gnu/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether __clang__ is declared... no
+checking whether __INTEL_COMPILER is declared... no
+checking whether __SUNPRO_C is declared... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking if gcc supports -Werror=unknown-warning-option... no
+checking if gcc supports -Werror=unused-command-line-argument... no
+checking if gcc supports -Wall... yes
+checking if gcc supports -Wpointer-arith... yes
+checking if gcc supports -Wmissing-declarations... yes
+checking if gcc supports -Wformat=2... yes
+checking if gcc supports -Wstrict-prototypes... yes
+checking if gcc supports -Wmissing-prototypes... yes
+checking if gcc supports -Wnested-externs... yes
+checking if gcc supports -Wbad-function-cast... yes
+checking if gcc supports -Wold-style-definition... yes
+checking if gcc supports -Wunused... yes
+checking if gcc supports -Wuninitialized... yes
+checking if gcc supports -Wshadow... yes
+checking if gcc supports -Wmissing-noreturn... yes
+checking if gcc supports -Wmissing-format-attribute... yes
+checking if gcc supports -Wredundant-decls... yes
+checking if gcc supports -Wlogical-op... yes
+checking if gcc supports -Werror=implicit... yes
+checking if gcc supports -Werror=nonnull... yes
+checking if gcc supports -Werror=init-self... yes
+checking if gcc supports -Werror=main... yes
+checking if gcc supports -Werror=missing-braces... yes
+checking if gcc supports -Werror=sequence-point... yes
+checking if gcc supports -Werror=return-type... yes
+checking if gcc supports -Werror=trigraphs... yes
+checking if gcc supports -Werror=array-bounds... yes
+checking if gcc supports -Werror=write-strings... yes
+checking if gcc supports -Werror=address... yes
+checking if gcc supports -Werror=int-to-pointer-cast... yes
+checking if gcc supports -Werror=pointer-to-int-cast... yes
+checking if gcc supports -pedantic... yes
+checking if gcc supports -Werror... yes
+checking if gcc supports -Werror=attributes... yes
+checking whether to act as if malloc(0) can return NULL... yes
+checking for XRES... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating xres.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/run/build/libXres'
+Making all in src
+make[2]: Entering directory '/run/build/libXres/src'
+  CC       XRes.lo
+  CCLD     libXRes.la
+make[2]: Leaving directory '/run/build/libXres/src'
+Making all in man
+make[2]: Entering directory '/run/build/libXres/man'
+  GEN      XRes.3
+  GEN      XResQueryExtension.3
+  GEN      XResQueryClients.3
+  GEN      XResQueryClientResources.3
+  GEN      XResQueryVersion.3
+  GEN      XResQueryClientPixmapBytes.3
+make[2]: Leaving directory '/run/build/libXres/man'
+make[2]: Entering directory '/run/build/libXres'
+make[2]: Leaving directory '/run/build/libXres'
+make[1]: Leaving directory '/run/build/libXres'
+Making install in src
+make[1]: Entering directory '/run/build/libXres/src'
+make[2]: Entering directory '/run/build/libXres/src'
+ /usr/bin/mkdir -p '/app/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libXRes.la '/app/lib'
+libtool: install: /usr/bin/install -c .libs/libXRes.so.1.0.0 /app/lib/libXRes.so.1.0.0
+libtool: install: (cd /app/lib && { ln -s -f libXRes.so.1.0.0 libXRes.so.1 || { rm -f libXRes.so.1 && ln -s libXRes.so.1.0.0 libXRes.so.1; }; })
+libtool: install: (cd /app/lib && { ln -s -f libXRes.so.1.0.0 libXRes.so || { rm -f libXRes.so && ln -s libXRes.so.1.0.0 libXRes.so; }; })
+libtool: install: /usr/bin/install -c .libs/libXRes.lai /app/lib/libXRes.la
+libtool: install: /usr/bin/install -c .libs/libXRes.a /app/lib/libXRes.a
+libtool: install: chmod 644 /app/lib/libXRes.a
+libtool: install: ranlib /app/lib/libXRes.a
+libtool: finish: PATH="/run/ccache/bin:/app/bin:/usr/bin:/sbin" ldconfig -n /app/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /app/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/app/include/X11/extensions'
+ /usr/bin/install -c -m 644 ../include/X11/extensions/XRes.h '/app/include/X11/extensions'
+make[2]: Leaving directory '/run/build/libXres/src'
+make[1]: Leaving directory '/run/build/libXres/src'
+Making install in man
+make[1]: Entering directory '/run/build/libXres/man'
+make[2]: Entering directory '/run/build/libXres/man'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/app/share/man/man3'
+ /usr/bin/install -c -m 644 XRes.3 XResQueryExtension.3 XResQueryVersion.3 XResQueryClients.3 XResQueryClientResources.3 XResQueryClientPixmapBytes.3 '/app/share/man/man3'
+make[2]: Leaving directory '/run/build/libXres/man'
+make[1]: Leaving directory '/run/build/libXres/man'
+make[1]: Entering directory '/run/build/libXres'
+make[2]: Entering directory '/run/build/libXres'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/app/lib/pkgconfig'
+ /usr/bin/install -c -m 644 xres.pc '/app/lib/pkgconfig'
+make[2]: Leaving directory '/run/build/libXres'
+make[1]: Leaving directory '/run/build/libXres'
+Recording license file COPYING
+compressing debuginfo in: /tmp/xpra-client-flatpak/org.xpra.Client/.flatpak-builder/rofiles/rofiles-u2pHS7/files/lib/libXRes.so.1.0.0
+processing: /tmp/xpra-client-flatpak/org.xpra.Client/.flatpak-builder/rofiles/rofiles-u2pHS7/files/lib/libXRes.so.1.0.0
+[27] .debug_aranges compressed -> .zdebug_aranges (192 => 80 41.67%)
+[28] .debug_info compressed -> .zdebug_info (29265 => 13602 46.48%)
+[29] .debug_abbrev compressed -> .zdebug_abbrev (1449 => 620 42.79%)
+[30] .debug_line compressed -> .zdebug_line (2967 => 1322 44.56%)
+[31] .debug_str compressed -> .zdebug_str (8369 => 3680 43.97%)
+[32] .debug_line_str compressed -> .zdebug_line_str (416 => 228 54.81%)
+[33] .debug_loclists compressed -> .zdebug_loclists (3188 => 1333 41.81%)
+[34] .debug_rnglists compressed -> .zdebug_rnglists (428 => 241 56.31%)
+[37] Updating section string table
+stripping /tmp/xpra-client-flatpak/org.xpra.Client/.flatpak-builder/rofiles/rofiles-u2pHS7/files/lib/libXRes.so.1.0.0 to /tmp/xpra-client-flatpak/org.xpra.Client/.flatpak-builder/rofiles/rofiles-u2pHS7/files/lib/debug/lib/libXRes.so.1.0.0.debug
+Committing stage build-libXres to cache
+========================================================================
+Building module xpra in /tmp/xpra-client-flatpak/org.xpra.Client/.flatpak-builder/build/xpra-2
+========================================================================
+Running: pip3 install --prefix=/app --no-build-isolation Cython
+Requirement already satisfied: Cython in /usr/lib/python3.13/site-packages (3.2.4)
+Running: pip3 install --prefix=/app --no-build-isolation .
+Processing /run/build/xpra
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [158 lines of output]
+      Warning: could not get branch information
+      'git describe --long --always --tags' failed with return code 128
+      # updated 'xpra/src_info.py' with:
+      BRANCH = 'unknown'
+      COMMIT = 'unknown'
+      LOCAL_MODIFICATIONS = 0
+      REVISION = 'unknown'
+      # updated 'xpra/build_info.py' with:
+      build = {'date': '2026-03-08', 'time': '08:17', 'machine': 'x86_64', 'cpu': 'AMD Ryzen 5 5600X 6-Core Processor', 'bit': '64bit', 'os': 'linux', 'type': '', 'python': '3.13.11', 'cython': '3.2.4', 'compiler': 'gcc (GCC) 15.2.0', 'nvcc': '', 'linker': 'GNU ld (GNU Binutils) 2.45.1'}
+      libs = {'vpx': '1.15.2', 'x11': '1.8.12', 'xrandr': '1.5.4', 'xtst': '1.2.5', 'xfixes': '6.0.2', 'xkbfile': '1.1.3', 'xcomposite': '0.4.6', 'xdamage': '1.1.6', 'xext': '1.3.6', 'gobject-introspection-1.0': '1.86.0', 'gtk+-3.0': '3.24.51', 'gtk+-x11-3.0': '3.24.51', 'python3': '3.13'}
+      python_libs = {'Cython': '3.2.4', 'Mako': '1.3.10.dev0', 'Markdown': '3.10', 'MarkupSafe': '3.0.3', 'meson': '1.9.2', 'packaging': '25.0', 'setuptools': '80.9.0', 'wheel': '0.46.1'}
+      /usr/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py dist_info --output-dir /tmp/pip-modern-metadata-f_d_kv_j --keep-egg-info
+      Xpra version 6.4.3
+      Python version 3.13.11
+      ARCH=x86_64
+      INCLUDE_DIRS=['/usr/include']
+      build switches:
+      * Os                   : No
+      * PIC                  : Yes
+      * Xdummy               : Auto
+      * Xdummy_wrapper       : Auto
+      * amf                  : No
+      * amf_encoder          : No
+      * annotate             : No
+      * argb                 : Yes
+      * argb_encoder         : Yes
+      * audio                : Yes
+      * avif                 : Yes
+      * avif_decoder         : Yes
+      * avif_encoder         : Yes
+      * brotli               : Yes
+      * bundle_tests         : No
+      * cityhash             : No
+      * client               : Yes
+      * clipboard            : Yes
+      * codecs               : Yes
+      * csc_cython           : Yes
+      * csc_libyuv           : No
+      * cuda_kernels         : No
+      * cuda_rebuild         : Auto
+      * cython               : Yes
+      * cython_shared        : Yes
+      * cython_tracing       : No
+      * cythonize_more       : No
+      * data                 : Yes
+      * dbus                 : Yes
+      * debug                : No
+      * decoders             : Yes
+      * docs                 : Auto
+      * drm                  : Yes
+      * enc_x264             : No
+      * encoders             : Yes
+      * evdi                 : No
+      * example              : Yes
+      * gstreamer            : Yes
+      * gstreamer_audio      : Yes
+      * gstreamer_video      : Yes
+      * gtk3                 : Yes
+      * gtk_x11              : Yes
+      * http                 : Yes
+      * ism_ext              : Yes
+      * jpeg_decoder         : Yes
+      * jpeg_encoder         : Yes
+      * keyboard             : Yes
+      * lz4                  : Yes
+      * mdns                 : Yes
+      * mmap                 : Yes
+      * modules              : Yes
+      * netdev               : Yes
+      * notifications        : Yes
+      * nvdec                : No
+      * nvenc                : No
+      * nvfbc                : No
+      * nvidia               : Yes
+      * nvjpeg_decoder       : No
+      * nvjpeg_encoder       : No
+      * opengl               : Yes
+      * openh264             : No
+      * openh264_decoder     : No
+      * openh264_encoder     : No
+      * pam                  : No
+      * pandoc_lua           : Yes
+      * peercred             : No
+      * pillow               : Yes
+      * pillow_decoder       : Yes
+      * pillow_encoder       : Yes
+      * printing             : Yes
+      * proc                 : Yes
+      * proxy                : Yes
+      * pyglet_client        : No
+      * qrencode             : No
+      * qt6_client           : No
+      * quic                 : Yes
+      * rebuild              : Yes
+      * remote_encoder       : Yes
+      * rencodeplus          : Yes
+      * rfb                  : Yes
+      * scripts              : Yes
+      * sd_listen            : Yes
+      * server               : Yes
+      * service              : Yes
+      * shadow               : Yes
+      * spng_decoder         : No
+      * spng_encoder         : No
+      * ssh                  : Yes
+      * ssl                  : Yes
+      * strict               : No
+      * tests                : No
+      * tk_client            : No
+      * uinput               : Yes
+      * v4l2                 : Yes
+      * verbose              : No
+      * vpx                  : Yes
+      * vpx_decoder          : Yes
+      * vpx_encoder          : Yes
+      * vsock                : Yes
+      * warn                 : Yes
+      * wayland_client       : Yes
+      * wayland_server       : No
+      * webcam               : Yes
+      * webp                 : Yes
+      * webp_decoder         : Yes
+      * webp_encoder         : Yes
+      * websockets           : Yes
+      * websockets_browser_cookie : Yes
+      * win32_tools          : No
+      * x11                  : Yes
+      * xdg_open             : Yes
+      * xinput               : Yes
+      * yaml                 : Yes
+      found Cython version 3.2.4
+      CC=gcc
+      CPP=cpp
+      Traceback (most recent call last):
+        File "/usr/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+          main()
+          ~~~~^^
+        File "/usr/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+          json_out["return_val"] = hook(**hook_input["kwargs"])
+                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/usr/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 175, in prepare_metadata_for_build_wheel
+          return hook(metadata_directory, config_settings)
+        File "/usr/lib/python3.13/site-packages/setuptools/build_meta.py", line 374, in prepare_metadata_for_build_wheel
+          self.run_setup()
+          ~~~~~~~~~~~~~~^^
+        File "/usr/lib/python3.13/site-packages/setuptools/build_meta.py", line 317, in run_setup
+          exec(code, locals())
+          ~~~~^^^^^^^^^^^^^^^^
+        File "<string>", line 2670, in <module>
+        File "<string>", line 1152, in tace
+        File "<string>", line 1124, in ace
+        File "<string>", line 1339, in exec_pkgconfig
+        File "<string>", line 1296, in add_pkgconfig
+      ValueError: ERROR: call to 'pkg-config --libs py3cairo' failed (err=Package py3cairo was not found in the pkg-config search path.
+      Perhaps you should add the directory containing `py3cairo.pc'
+      to the PKG_CONFIG_PATH environment variable
+      Package 'py3cairo' not found
+      )
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> from file:///run/build/xpra
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+Error: module xpra: Child process exited with code 1
