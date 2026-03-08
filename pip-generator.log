@@ -1,0 +1,183 @@
+Collecting Cython>=3.0 (from -r /tmp/requirements.nit_7_lg (line 2))
+  Downloading cython-3.2.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (7.5 kB)
+Collecting pycairo (from -r /tmp/requirements.nit_7_lg (line 3))
+  Downloading pycairo-1.29.0.tar.gz (665 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 665.9/665.9 kB 53.7 MB/s  0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting PyGObject (from -r /tmp/requirements.nit_7_lg (line 4))
+  Downloading pygobject-3.56.0.tar.gz (1.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 69.7 MB/s  0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting paramiko (from -r /tmp/requirements.nit_7_lg (line 6))
+  Downloading paramiko-4.0.0-py3-none-any.whl.metadata (3.9 kB)
+Collecting cryptography (from -r /tmp/requirements.nit_7_lg (line 7))
+  Downloading cryptography-46.0.5-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (5.7 kB)
+Collecting pyopenssl (from -r /tmp/requirements.nit_7_lg (line 8))
+  Downloading pyopenssl-25.3.0-py3-none-any.whl.metadata (17 kB)
+Collecting lz4 (from -r /tmp/requirements.nit_7_lg (line 10))
+  Downloading lz4-4.4.5-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting pillow (from -r /tmp/requirements.nit_7_lg (line 12))
+  Downloading pillow-12.1.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+Collecting pyopengl (from -r /tmp/requirements.nit_7_lg (line 14))
+  Downloading pyopengl-3.1.10-py3-none-any.whl.metadata (3.3 kB)
+Collecting pyopengl-accelerate (from -r /tmp/requirements.nit_7_lg (line 15))
+  Downloading pyopengl_accelerate-3.1.10-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.9 kB)
+Collecting netifaces (from -r /tmp/requirements.nit_7_lg (line 17))
+  Downloading netifaces-0.11.0.tar.gz (30 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting zeroconf (from -r /tmp/requirements.nit_7_lg (line 18))
+  Downloading zeroconf-0.148.0-cp313-cp313-manylinux_2_36_x86_64.whl.metadata (6.3 kB)
+Collecting bcrypt>=3.2 (from paramiko->-r /tmp/requirements.nit_7_lg (line 6))
+  Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_34_x86_64.whl.metadata (10 kB)
+Collecting invoke>=2.0 (from paramiko->-r /tmp/requirements.nit_7_lg (line 6))
+  Downloading invoke-2.2.1-py3-none-any.whl.metadata (3.3 kB)
+Collecting pynacl>=1.5 (from paramiko->-r /tmp/requirements.nit_7_lg (line 6))
+  Downloading pynacl-1.6.2-cp38-abi3-manylinux_2_34_x86_64.whl.metadata (10.0 kB)
+Collecting cffi>=2.0.0 (from cryptography->-r /tmp/requirements.nit_7_lg (line 7))
+  Downloading cffi-2.0.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+Collecting ifaddr>=0.1.7 (from zeroconf->-r /tmp/requirements.nit_7_lg (line 18))
+  Downloading ifaddr-0.2.0-py3-none-any.whl.metadata (4.9 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography->-r /tmp/requirements.nit_7_lg (line 7))
+  Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+Downloading cython-3.2.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 84.7 MB/s  0:00:00
+Downloading paramiko-4.0.0-py3-none-any.whl (223 kB)
+Downloading cryptography-46.0.5-cp311-abi3-manylinux_2_34_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 76.5 MB/s  0:00:00
+Downloading pyopenssl-25.3.0-py3-none-any.whl (57 kB)
+Downloading lz4-4.4.5-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 84.4 MB/s  0:00:00
+Downloading pillow-12.1.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 33.8 MB/s  0:00:00
+Downloading pyopengl-3.1.10-py3-none-any.whl (3.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 95.7 MB/s  0:00:00
+Downloading pyopengl_accelerate-3.1.10-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 14.7 MB/s  0:00:00
+Downloading zeroconf-0.148.0-cp313-cp313-manylinux_2_36_x86_64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 78.2 MB/s  0:00:00
+Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_34_x86_64.whl (278 kB)
+Downloading cffi-2.0.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (219 kB)
+Downloading ifaddr-0.2.0-py3-none-any.whl (12 kB)
+Downloading invoke-2.2.1-py3-none-any.whl (160 kB)
+Downloading pynacl-1.6.2-cp38-abi3-manylinux_2_34_x86_64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 73.1 MB/s  0:00:00
+Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/cython-3.2.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/pycairo-1.29.0.tar.gz
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/pygobject-3.56.0.tar.gz
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/paramiko-4.0.0-py3-none-any.whl
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/cryptography-46.0.5-cp311-abi3-manylinux_2_34_x86_64.whl
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/pyopenssl-25.3.0-py3-none-any.whl
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/lz4-4.4.5-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/pillow-12.1.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/pyopengl-3.1.10-py3-none-any.whl
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/pyopengl_accelerate-3.1.10-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/netifaces-0.11.0.tar.gz
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/zeroconf-0.148.0-cp313-cp313-manylinux_2_36_x86_64.whl
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/bcrypt-5.0.0-cp39-abi3-manylinux_2_34_x86_64.whl
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/cffi-2.0.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/ifaddr-0.2.0-py3-none-any.whl
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/invoke-2.2.1-py3-none-any.whl
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/pynacl-1.6.2-cp38-abi3-manylinux_2_34_x86_64.whl
+Saved /tmp/pip-generator-python3-xpra-deps7yaj6uyv/pycparser-3.0-py3-none-any.whl
+Successfully downloaded Cython pycairo PyGObject paramiko cryptography pyopenssl lz4 pillow pyopengl pyopengl-accelerate netifaces zeroconf bcrypt cffi ifaddr invoke pynacl pycparser
+========================================================================
+Downloading sources
+========================================================================
+Running: "flatpak --filesystem=/tmp/requirements.nit_7_lg --user --devel --share=network --filesystem=/tmp --command=pip3 run org.freedesktop.Sdk//25.08 download --exists-action=i --dest /tmp/pip-generator-python3-xpra-deps7yaj6uyv -r /tmp/requirements.nit_7_lg"
+========================================================================
+Downloading arch independent packages
+========================================================================
+Downloading https://files.pythonhosted.org/packages/d9/9a/4019b524b03a13438637b11538c82781a5eda427394380381af8f04f467a/pynacl-1.6.2.tar.gz
+Deleting pynacl-1.6.2-cp38-abi3-manylinux_2_34_x86_64.whl
+Downloading https://files.pythonhosted.org/packages/eb/56/b1ba7935a17738ae8453301356628e8147c79dbb825bcbc73dc7401f9846/cffi-2.0.0.tar.gz
+Deleting cffi-2.0.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+Downloading https://files.pythonhosted.org/packages/d4/36/3329e2518d70ad8e2e5817d5a4cac6bba05a47767ec416c7d020a965f408/bcrypt-5.0.0.tar.gz
+Deleting bcrypt-5.0.0-cp39-abi3-manylinux_2_34_x86_64.whl
+Downloading https://files.pythonhosted.org/packages/67/46/10db987799629d01930176ae523f70879b63577060d63e05ebf9214aba4b/zeroconf-0.148.0.tar.gz
+Deleting zeroconf-0.148.0-cp313-cp313-manylinux_2_36_x86_64.whl
+Downloading https://files.pythonhosted.org/packages/6d/49/dffa946f07e84eb4666d7fb5553a1d569d54405c863ff7a19b71758712f6/pyopengl_accelerate-3.1.10.tar.gz
+Deleting pyopengl_accelerate-3.1.10-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+Downloading https://files.pythonhosted.org/packages/1f/42/5c74462b4fd957fcd7b13b04fb3205ff8349236ea74c7c375766d6c82288/pillow-12.1.1.tar.gz
+Deleting pillow-12.1.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+Downloading https://files.pythonhosted.org/packages/57/51/f1b86d93029f418033dddf9b9f79c8d2641e7454080478ee2aab5123173e/lz4-4.4.5.tar.gz
+Deleting lz4-4.4.5-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+Downloading https://files.pythonhosted.org/packages/60/04/ee2a9e8542e4fa2773b81771ff8349ff19cdd56b7258a0cc442639052edb/cryptography-46.0.5.tar.gz
+Deleting cryptography-46.0.5-cp311-abi3-manylinux_2_34_x86_64.whl
+Downloading https://files.pythonhosted.org/packages/91/85/7574c9cd44b69a27210444b6650f6477f56c75fee1b70d7672d3e4166167/cython-3.2.4.tar.gz
+Deleting cython-3.2.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+========================================================================
+Obtaining hashes and urls
+========================================================================
+Generating hash for cython-3.2.4.tar.gz
+Extracting download url for cython
+Generating hash for cryptography-46.0.5.tar.gz
+Extracting download url for cryptography
+Generating hash for lz4-4.4.5.tar.gz
+Extracting download url for lz4
+Generating hash for pillow-12.1.1.tar.gz
+Extracting download url for pillow
+Generating hash for pyopengl_accelerate-3.1.10.tar.gz
+Extracting download url for pyopengl_accelerate
+Generating hash for zeroconf-0.148.0.tar.gz
+Extracting download url for zeroconf
+Generating hash for bcrypt-5.0.0.tar.gz
+Extracting download url for bcrypt
+Generating hash for cffi-2.0.0.tar.gz
+Extracting download url for cffi
+Generating hash for pynacl-1.6.2.tar.gz
+Extracting download url for pynacl
+Generating hash for pycparser-3.0-py3-none-any.whl
+Extracting download url for pycparser
+Generating hash for invoke-2.2.1-py3-none-any.whl
+Extracting download url for invoke
+Generating hash for ifaddr-0.2.0-py3-none-any.whl
+Extracting download url for ifaddr
+Generating hash for netifaces-0.11.0.tar.gz
+Extracting download url for netifaces
+Generating hash for pyopengl-3.1.10-py3-none-any.whl
+Extracting download url for pyopengl
+Generating hash for pyopenssl-25.3.0-py3-none-any.whl
+Extracting download url for pyopenssl
+Generating hash for paramiko-4.0.0-py3-none-any.whl
+Extracting download url for paramiko
+Generating hash for pygobject-3.56.0.tar.gz
+Extracting download url for pygobject
+Generating hash for pycairo-1.29.0.tar.gz
+Extracting download url for pycairo
+========================================================================
+Generating dependencies
+========================================================================
+Cython is in system_packages. Skipping.
+Generating dependencies for pycairo
+Generating dependencies for PyGObject
+Generating dependencies for paramiko
+Generating dependencies for cryptography
+Generating dependencies for pyopenssl
+Generating dependencies for lz4
+Generating dependencies for pillow
+Generating dependencies for pyopengl
+Generating dependencies for pyopengl-accelerate
+Generating dependencies for netifaces
+Generating dependencies for zeroconf
+
+Output saved to python3-xpra-deps.yaml
