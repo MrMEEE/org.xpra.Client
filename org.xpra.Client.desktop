@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Xpra Client
+GenericName=Remote Display Client
+Comment=Connect to remote displays and applications
+Icon=org.xpra.Client
+Exec=xpra
+Terminal=false
+Categories=Network;RemoteAccess;
+Keywords=remote;display;X11;screen;forwarding;
+StartupNotify=true

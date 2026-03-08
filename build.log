@@ -1,0 +1,6 @@
+Downloading sources
+Downloading https://files.pythonhosted.org/packages/3e/d1/4445ce58e34bbc4eacfc970d30a6aaec36b91c0a4a63a7c5fb76832afffe/Cython-3.0.11-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+Failed to download sources: module python-cython: The requested URL returned error: 404

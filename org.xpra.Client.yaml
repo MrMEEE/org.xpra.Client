@@ -1,0 +1,41 @@
+app-id: org.xpra.Client
+runtime: org.freedesktop.Platform
+runtime-version: '25.08'
+sdk: org.freedesktop.Sdk
+command: xpra
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --socket=pulseaudio
+  - --share=network
+  - --device=dri
+  - --filesystem=xdg-download
+  - --filesystem=xdg-documents
+  - --system-talk-name=org.freedesktop.Notifications
+  - --talk-name=org.freedesktop.secrets
+  - --talk-name=org.gtk.vfs.*
+  - --talk-name=org.a11y.Bus
+  - --own-name=org.xpra.Client
+
+modules:
+  # Xpra itself
+  - name: xpra
+    buildsystem: simple
+    build-commands:
+      - pip3 install --prefix=/app --no-deps .
+      - install -Dm755 */fs/bin/xpra /app/bin/xpra
+      - install -Dm755 */fs/bin/xpra_launcher /app/bin/xpra_launcher
+      - install -Dm644 org.xpra.Client.desktop /app/share/applications/org.xpra.Client.desktop
+      - install -Dm644 org.xpra.Client.metainfo.xml /app/share/metainfo/org.xpra.Client.metainfo.xml
+      # Install icon
+      - install -Dm644 */fs/share/xpra/icons/xpra.png /app/share/icons/hicolor/48x48/apps/org.xpra.Client.png
+    sources:
+      - type: archive
+        url: https://api.github.com/repos/Xpra-org/xpra/tarball/v6.4.3
+        sha256: 5f72e19f124227c93b205cf1ac4197ac8ca6cb15e9a2a9d61a13f85e790aa998
+        dest-filename: xpra-6.4.3.tar.gz
+      - type: file
+        path: org.xpra.Client.desktop
+      - type: file
+        path: org.xpra.Client.metainfo.xml

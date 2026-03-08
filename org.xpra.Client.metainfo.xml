@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.xpra.Client</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0-or-later</project_license>
+  <name>Xpra Client</name>
+  <summary>Multi-platform screen and application forwarding client</summary>
+  <description>
+    <p>
+      Xpra is known as "screen for X": its seamless mode allows you to run X11 programs,
+      usually on a remote host, direct their display to your local machine, and then to
+      disconnect from these programs and reconnect from the same or another machine(s),
+      without losing any state.
+    </p>
+    <p>
+      This package includes the Xpra client for connecting to remote Xpra servers.
+      Xpra forwards and synchronizes many extra desktop features including audio input and
+      output, printers, clipboard, system trays, notifications, webcams, and more.
+    </p>
+    <p>
+      Features:
+    </p>
+    <ul>
+      <li>Connect to remote displays and applications</li>
+      <li>Seamless window integration with your desktop</li>
+      <li>Audio forwarding (input and output)</li>
+      <li>Clipboard synchronization</li>
+      <li>File transfers</li>
+      <li>Printer forwarding</li>
+      <li>System tray integration</li>
+      <li>Notifications synchronization</li>
+      <li>Webcam forwarding</li>
+      <li>Network encryption and authentication</li>
+      <li>Support for multiple connection protocols (SSH, SSL, TCP, etc.)</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">org.xpra.Client.desktop</launchable>
+  <url type="homepage">https://xpra.org/</url>
+  <url type="bugtracker">https://github.com/Xpra-org/xpra/issues</url>
+  <url type="help">https://github.com/Xpra-org/xpra/tree/master/docs</url>
+  <url type="donation">https://github.com/sponsors/totaam</url>
+  <developer_name>Antoine Martin</developer_name>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="6.4.3" date="2026-02-01">
+      <description>
+        <p>Latest stable release of Xpra.</p>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Xpra client interface</caption>
+    </screenshot>
+  </screenshots>
+  <categories>
+    <category>Network</category>
+    <category>RemoteAccess</category>
+  </categories>
+  <keywords>
+    <keyword>remote</keyword>
+    <keyword>display</keyword>
+    <keyword>X11</keyword>
+    <keyword>screen</keyword>
+    <keyword>forwarding</keyword>
+  </keywords>
+</component>
