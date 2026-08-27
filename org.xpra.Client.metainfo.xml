@@ -43,7 +43,7 @@
   <developer_name>Antoine Martin</developer_name>
   <content_rating type="oars-1.1" />
   <releases>
-    <release version="6.4.3" date="2026-02-01">
+    <release version="6.5.3" date="2026-08-18">
       <description>
         <p>Latest stable release of Xpra.</p>
       </description>

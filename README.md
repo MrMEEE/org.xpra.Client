@@ -1,6 +1,6 @@
 # Xpra Client Flatpak
 
-Flatpak packaging for the Xpra X11 forwarding client (client-only, version 6.4.3).
+Flatpak packaging for the Xpra X11 forwarding client (client-only, version 6.5).
 
 ## Status: ✅ COMPLETED
 
@@ -18,7 +18,7 @@ flatpak-builder --user --install --ccache builddir org.xpra.Client.yaml
 
 ```bash
 flatpak run org.xpra.Client --version
-# xpra v6.4.3
+# xpra v6.5
 
 flatpak run org.xpra.Client attach ssh://user@host/display
 ```
